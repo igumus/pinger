@@ -6,4 +6,5 @@
   :dependencies [[org.clojure/clojure "1.5.1"]
   		 [org.clojure/tools.logging "0.2.6"]]
   :main pinger.core
+  :resource-paths ["resources"]
   :profiles {:uberjar {:aot :all}})
