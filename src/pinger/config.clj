@@ -11,5 +11,6 @@
 (defn config []
   (load-properties "resources/pinger.properties"))
 
-(defn urls [conf]
-  (str/split (.get conf "urls") #","))
+(defn urls
+  ([] (urls (config)))
+  ([conf](str/split (.get conf "urls") #",")))
